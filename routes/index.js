@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-let date = new Date().toLocaleString('es-MX', {timeZone: userTimeZone})
+let date = new Date().toLocaleString({timeZone: userTimeZone})
 
 const messages = [
   {
