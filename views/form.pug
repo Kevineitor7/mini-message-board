@@ -1,0 +1,11 @@
+extends layout 
+
+block content
+    h1 heading 
+    <form method="POST" action="/new">
+        <input name="userName" type="text" placeholder="Name"/><br><br>
+        <input name="messageText" type="text" placeholder="Message"/><br><br>          
+        <input type="submit" value="Submit"/>
+    </form>
+    <br>
+    <button onclick="location.href='/'">Go to Index</button>
